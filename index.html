@@ -7,40 +7,38 @@
   </head>
   <body>
     <form method="post" action="traitement.php">
-      <fieldset class="identité">
-      <legend class="identité">Votre identité</legend>
+      <fieldset class="identity">
+      <legend class="identity">Votre identité</legend>
         <ol>
-          <li><label for="nom">Nom : </label>
-            <input type="text" name="nom" id="nom" value="Nom"></li>
-          <li><label for="prénom">Prénom : </label>
-            <input type="text" name="prénom" id="prénom" value="Prénom"></li>
-          <li><label for="adresse mail">Adresse Mail : </label>
-              <input type="text" name="adresse mail" id="adresse mail" value="Adressse Mail"></li>
+          <li><label for="Name">Nom : </label>
+            <input type="text" name="Name" id="Name" value="Nom"></li>
+          <li><label for="firstname">Prénom : </label>
+            <input type="text" name="firstname" id="firstname" value="Prénom"></li>
+          <li><label for="eMail">Adresse Mail : </label>
+              <input type="text" name="eMail" id="eMail" value="Adresse Mail"></li>
         </ol>
       </fieldset>
-      <fieldset class="livraison">
-        <legend class="livraison">Adresse de livraison</legend>
+      <fieldset class="deliveryAdress">
+        <legend class="deliveryAdress">Adresse de livraison</legend>
           <ol>
-            <li><label for="adresse">Adresse : </label>
-              <textarea name="adresse" id="adresse" rows="5"></textarea></li>
-            <li><label for="code postal">Code Postal :</label>
-              <input type="text" name="code postale" id="code postale" value="Code postal"></li>
-            <li><label for="ville"> Ville : </label>
-              <input type="text" name="ville" id="ville" value="Ville"></li>
+            <li><label for="adress">Adresse : </label>
+              <textarea name="adress" id="adress" rows="5"></textarea></li>
+            <li><label for="PostalCode">Code Postal :</label>
+              <input type="text" name="PostalCode" id="PostalCode" value="Code Pastale"></li>
+            <li><label for="city"> Ville : </label>
+              <input type="text" name="city" id="city" value="ville"></li>
           </ol>
       </fieldset>
-      <fieldset class="paiement">
-          <legend class="paiement">Information de réglement</legend>
+      <fieldset class="payment">
+          <legend class="payment">Information de réglement</legend>
             <ol>
-              <li><label for="type de carte banquaire">Type de carte banquaire :</label><br>
-                <input type="radio" name="cb" id="cb" value="VISA"><label for="visa">VISA</label><br>
-                <input type="radio" name="cb" id="cb"value="Mastercard"><label for="mastercard">Mastercard</label></li>
-              <li><label for="numero de carte">Numéro de carte : </label>
-                <input type="text" name="numero de carte" id="numero de carte" value="Numéro de carte"></li>
-              <li><label for="code de sécurité">Code de sécurité : </label>
-                <input type="text" name="code de sécurité" id="code de sécurité" value="Code de sécurité"></li>
-              <li><label for="nom du titulaire"> Nom du titulaire : </label>
-                <input type="text" name="nom du titulaire" id="nom du titulaire" value="Nom du titulaire"></li>
+              <li><label for="cb">Type de carte banquaire :</label><br>
+                <input type="radio" name="cb" id="cb" value="cb"><label for="cb">VISA</label><br>
+                <input type="radio" name="cb2" id="cb2" value="cb2"><label for="cb2">Mastercard</label>
+              <li><label for="SecurityNumber">Code de sécurité : </label>
+                <input type="text" name="SecurityNumber" id="SecurityNumber" value="SecurityNumber"></li>
+              <li><label for="cardHolderName"> Nom du titulaire : </label>
+                <input type="text" name="cardHolderName" id="cardHolderName" value="cardHolderName"></li>
             </ol>
       </fieldset>
       <input type="submit" value="J'achète !">
